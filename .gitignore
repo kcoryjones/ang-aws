@@ -1,0 +1,7 @@
+node_modules/
+bower_components/
+.vagrant/
+*.log
+.yo-rc.json
+aws_config
+aws_credentials
