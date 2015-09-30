@@ -14,7 +14,6 @@ $once = <<ONCE
     wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz -O /dynamodb/dynamodb.tar.gz
     tar xvzf /dynamodb/dynamodb.tar.gz --directory /dynamodb
     rm /dynamodb/dynamodb.tar.gz
-    java -Djava.library.path=./DynamoDBLocal_lib -jar /dynamodb/DynamoDBLocal.jar -sharedDb -cors * &
 
     # install aws cli latest version
     curl -O https://bootstrap.pypa.io/get-pip.py
