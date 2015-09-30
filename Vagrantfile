@@ -46,6 +46,9 @@ $always = <<ALWAYS
     # aws from command line
     alias aws="/usr/local/bin/aws"
 
+    # start dynamodb local
+    java -Djava.library.path=./DynamoDBLocal_lib -jar /dynamodb/DynamoDBLocal.jar -sharedDb -cors * &
+
     # latest npm dependencies
     test -d /var/www/app && npm install --prefix /var/www/app --no-bin-links
     test -d /var/www/lambda && npm install --prefix /var/www/lambda/login --no-bin-links
