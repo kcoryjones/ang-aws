@@ -69,7 +69,6 @@ Vagrant.configure(2) do |config|
     config.vm.synced_folder ".", "/var/www"
     config.vm.provider "virtualbox" do |vb|
         vb.memory = "512"
-        vb.name = "ang-aws"
     end
     config.vm.provision "once", type: "shell", inline: $once
     config.vm.provision "always", type: "shell", inline: $always, run: "always"
