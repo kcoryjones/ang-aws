@@ -50,8 +50,8 @@ $always = <<ALWAYS
 
     # latest npm dependencies
     test -d /var/www/app && npm install --prefix /var/www/app --no-bin-links
-    test -d /var/www/lambda && npm install --prefix /var/www/lambda/login --no-bin-links
-    test -d /var/www/lambda && npm install --prefix /var/www/lambda/api --no-bin-links
+    test -d /var/www/lambda/login && npm install --prefix /var/www/lambda/login --no-bin-links
+    test -d /var/www/lambda/api && npm install --prefix /var/www/lambda/api --no-bin-links
 
     # aws credentials and configuration
     test -d /home/vagrant/.aws && echo '/home/vagrant/.aws exists' || mkdir /home/vagrant/.aws
